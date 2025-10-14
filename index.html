@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Blogspace</title>
 </head>
@@ -11,14 +13,15 @@
         <h2>Blogspace</h2>
     </header>
         
-    <form id="new-post">
+    <form id="post-form">
         <label for="post-title">Title:</label>
         <input id="post-title" type="text" />
         <label for="post-body">Body:</label>
         <textarea id="post-body"></textarea>
-        <button>Post</button>
+        <button type="submit">Post</button>
     </form>
-        <div id="blog-list"></div>
+
+    <div id="blog-list"></div>
 
 
 
