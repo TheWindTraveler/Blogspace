@@ -4,7 +4,7 @@ body {
   font-family: 'Oxygen', sans-serif;
 }
 
-
+/* Header section*/
 header {
   position: fixed;
   top: 0;
@@ -20,6 +20,7 @@ header {
   padding-left: 1rem;
 }
 
+/* Form section */
 form {
   display: flex;
   flex-direction: column;
@@ -48,7 +49,7 @@ textarea {
   box-sizing: border-box;
 }
 
-
+/* Buttons section */
 button {
   background-color: #007BFF;
   color: white;
@@ -65,10 +66,38 @@ button:hover {
   background-color: #0056b3;
 }
 
+/* Blog post section */
 #blog-list {
-  background: #f9f9f9;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
   padding: 4rem;
   margin-bottom: 1rem;
+  background: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  width: calc(33.333% - 20px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+
+/* Media queries */
+@media (max-width: 900px) {
+  .post {
+    width: calc(50% - 20px); 
+  }
+}
+
+@media (max-width: 600px) {
+  .post {
+    width: 100%;
+  }
 }
